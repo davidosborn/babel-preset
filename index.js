@@ -20,7 +20,7 @@ module.exports = function() {
 		presets: [
 			[require('@babel/preset-env'), {
 				targets: {
-					node: 'current'
+					node: '9'
 				}
 			}],
 			require('babel-preset-minify')
