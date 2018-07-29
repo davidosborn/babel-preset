@@ -2,7 +2,7 @@ module.exports = function() {
 	return {
 		plugins: [
 			require('@babel/plugin-proposal-class-properties'),
-			require('@babel/plugin-proposal-decorators'),
+			[require('@babel/plugin-proposal-decorators'), {legacy: true}],
 			require('@babel/plugin-proposal-do-expressions'),
 			require('@babel/plugin-proposal-export-default-from'),
 			require('@babel/plugin-proposal-export-namespace-from'),
