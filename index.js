@@ -1,29 +1,29 @@
 module.exports = function() {
 	return {
 		plugins: [
-			require('@babel/proposal-class-properties'),
-			require('@babel/proposal-decorators'),
-			require('@babel/proposal-do-expressions'),
-			require('@babel/proposal-export-default-from'),
-			require('@babel/proposal-export-namespace-from'),
-			require('@babel/proposal-function-sent'),
-			require('@babel/proposal-json-strings'),
-			require('@babel/proposal-logical-assignment-operators'),
-			require('@babel/proposal-nullish-coalescing-operator'),
-			require('@babel/proposal-numeric-separator'),
-			require('@babel/proposal-optional-chaining'),
-			require('@babel/proposal-pipeline-operator'),
-			require('@babel/proposal-throw-expressions'),
-			require('@babel/syntax-dynamic-import'),
-			require('@babel/syntax-import-meta')
+			require('@babel/plugin-proposal-class-properties'),
+			require('@babel/plugin-proposal-decorators'),
+			require('@babel/plugin-proposal-do-expressions'),
+			require('@babel/plugin-proposal-export-default-from'),
+			require('@babel/plugin-proposal-export-namespace-from'),
+			require('@babel/plugin-proposal-function-sent'),
+			require('@babel/plugin-proposal-json-strings'),
+			require('@babel/plugin-proposal-logical-assignment-operators'),
+			require('@babel/plugin-proposal-nullish-coalescing-operator'),
+			require('@babel/plugin-proposal-numeric-separator'),
+			require('@babel/plugin-proposal-optional-chaining'),
+			require('@babel/plugin-proposal-pipeline-operator'),
+			require('@babel/plugin-proposal-throw-expressions'),
+			require('@babel/plugin-syntax-dynamic-import'),
+			require('@babel/plugin-syntax-import-meta')
 		],
 		presets: [
-			[require('@babel/env'), {
+			[require('@babel/preset-env'), {
 				targets: {
 					node: 'current'
 				}
 			}],
-			require('minify')
+			require('babel-preset-minify')
 		],
 	}
 }
