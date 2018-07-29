@@ -43,10 +43,5 @@
 	},
 	"publishConfig": {
 		"access": "public"
-	},
-	"babel": {
-		"presets": [
-			"@davidosborn/babel-preset"
-		]
 	}
 }
