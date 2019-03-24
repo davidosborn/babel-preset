@@ -1,6 +1,6 @@
 {
 	"name": "@davidosborn/babel-preset",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"description": "A Babel preset",
 	"keywords": [
 		"babel",
