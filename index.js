@@ -22,8 +22,7 @@ module.exports = function() {
 				targets: {
 					node: '9'
 				}
-			}],
-			require('babel-preset-minify')
-		],
+			}]
+		]
 	}
 }
